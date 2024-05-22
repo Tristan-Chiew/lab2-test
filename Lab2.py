@@ -6,7 +6,7 @@ def display_main_menu():
     input_values = input("Enter some numbers seperated by commas")
 
 def get_user_input():
-    usable_values = input_values.split(,)   
+    usable_values = input_values.split(",")   
 
 def calc_avg():
     total = 0
@@ -23,4 +23,8 @@ def sort_temp():
     print("dummy")
 
 def calc_median():
-    print("dummy")
+    aga = len(usable_values)
+    if aga % 2 == 0:
+        return (usable_values[aga/2] + usable_values[(aga/2)+1])/2
+    else:
+        return usable_values[(aga/2) + 0.5]
